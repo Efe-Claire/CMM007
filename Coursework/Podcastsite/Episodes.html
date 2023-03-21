@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contact | Podcast Title</title>
+    <title>Episodes | Claire's Fantasy World</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -63,43 +63,33 @@
         line-height: 1.5;
       }
 
-      form {
+      .episode {
         margin-top: 2em;
+        border: 1px solid #333;
+        padding: 1em;
       }
 
-      input[type="text"],
-      input[type="email"],
-      textarea {
+      .episode h3 {
+        margin-top: 0;
+      }
+
+      .episode p {
+        margin-bottom: 0;
+      }
+
+      .episode a {
         display: block;
-        margin-top: 1em;
-        padding: 0.5em;
-        border: 1px solid #ccc;
-        width: 100%;
-        font-size: 1.2em;
-      }
-
-      input[type="submit"] {
-        display: block;
-        margin-top: 1em;
-        padding: 0.5em;
-        border: none;
-        background-color: #333;
-        color: white;
-        font-size: 1.2em;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #555;
+        margin-top: 0.5em;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Contact | Claire's Fantasy World</h1>
+      <h1>Episodes | Claire's Fantasy World</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="Landmarks.html">Landmarks</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="episodes.html">Episodes</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -108,19 +98,21 @@
     </header>
     <main>
       <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or comments about our podcast, please get in touch using the form below:</p>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
-          <input type="submit" value="Send Message">
-        </form>
-        <p>You can also contact us directly at <a href="mailto:contact@clairefantasyworld.com">contact
-        </section>
+        <h2>Latest Episodes</h2>
+        <div class="episode">
+          <h3>Episode Title 1</h3>
+          <p>Description of Episode 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod velit et ante ullamcorper, a aliquet magna finibus. Phasellus suscipit massa sit amet mauris malesuada, non dignissim tortor sodales. </p>
+          <a href="#">Listen Now &rarr;</a>
+        </div>
+        <div class="episode">
+          <h3>Episode Title 2</h3>
+          <p>Description of Episode 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod velit et ante ullamcorper, a aliquet magna finibus. Phasellus suscipit massa sit amet mauris malesuada, non dignissim tortor sodales. </p>
+          <a href="#">Listen Now &rarr;</a>
+        </div>
+        <div class="episode">
+          <h3>Episode Title 3</h3>
+          <p>Description of Episode 3 Lorem ipsum dolor sit amet, consectetur adipiscing
+      </section>
     </main>
     <footer>
       <p>&copy; 2023 Claire's Fantasy World. All rights reserved.</p>
