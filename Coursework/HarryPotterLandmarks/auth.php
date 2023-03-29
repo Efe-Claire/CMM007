@@ -1,78 +1,89 @@
 <?php
 session_start();
-// Check if the form is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Check if username and password are set
-    if (isset($_POST['username']) && isset($_POST['password'])) {
-        // Check if the user is an admin
-        if ($_POST['usertype'] === 'admin') {
-            // Check if username and password are correct for admin
-            if ($_POST['username'] === 'admin' && $_POST['password'] === 'password123') {
-                // Set session variables
-                $_SESSION['username'] = $_POST['username'];
-                $_SESSION['usertype'] = $_POST['usertype'];
-                // Redirect to admin page
-                header('Location: admin.php');
-            } else {
-                // Invalid credentials for admin
-                echo "Invalid credentials for admin";
-            }
+
+// Database credentials
+define('DB_SERVER', 'localhost');
+define('DB_NAME', 'HarryPotterLandmarks');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'root');
+
+// Connect to database
+$db = new mysqli(DB_SERVER, DB_NAME, DB_USERNAME, DB_PASSWORD);
+
+// Check connection
+if ($db  === false) {
+    die("ERROR: Could not connect. " . $db->mysqli_connect_error());
+}
+
+// Login function
+function login($db , $username, $password) {
+    $sql = "SELECT * FROM HarryPotterLandmarks WHERE username='$username'";
+    $result = mysqli_query($db , $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['type'] = $row['type'];
+            header("Location: index.php");
+            exit();
         } else {
-            // Check if username and password are correct for user
-            if ($_POST['username'] === 'user' && $_POST['password'] === 'password123') {
-                // Set session variables
-                $_SESSION['username'] = $_POST['username'];
-                $_SESSION['usertype'] = $_POST['usertype'];
-                // Redirect to user page
-                header('Location: user.php');
-            } else {
-                // Invalid credentials for user
-                echo "Invalid credentials for user";
-            }
+            return "Invalid password.";
         }
     } else {
-        // Username or password is missing
-        echo "Please enter username and password";
-    }
-}
-?>
-
-<?php
-session_start();
-require('db.php');
-
-// Check if the form is submitted
-if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email'])) {
-    // Assign variables from the form
-    $username = mysqli_real_escape_string($con, $_POST['username']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
-    $email = mysqli_real_escape_string($con, $_POST['email']);
-
-    // Check if username or email already exists in the database
-    $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
-    $result = mysqli_query($con, $user_check_query);
-    $user = mysqli_fetch_assoc($result);
-
-    // If user exists, throw an error
-    if ($user) {
-        if ($user['username'] === $username) {
-            $_SESSION['signup_error'] = "Username already exists";
-        }
-
-        if ($user['email'] === $email) {
-            $_SESSION['signup_error'] = "Email already exists";
-        }
-    } else {
-        // If user does not exist, insert user into database
-        $password = md5($password);
-        $query = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
-        mysqli_query($con, $query);
-        $_SESSION['signup_success'] = "Registration successful, please log in.";
+        return "Invalid username.";
     }
 }
 
-// Redirect to the signup page
-header('location: signup.php');
-exit();
-?>
+// Signup function
+function signup($db, $name, $username, $email, $password) {
+    // Check if username already exists
+    $sql = "SELECT * FROM HarryPotterLandmarks WHERE username='$username'";
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        return "Username already taken.";
+    }
 
+    // Check if email already exists
+    $sql = "SELECT * FROM HarryPotterLandmarks WHERE email='$email'";
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        return "Email already taken.";
+    }
+
+    // Hash password
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+    // Insert user into database
+    $sql = "INSERT INTO HarryPotterLandmarks (username, email, password, type) VALUES ('$username', '$email', '$hashed_password', 'user')";
+    if (mysqli_query($conn, $sql)) {
+        return "Signup successful.";
+    } else {
+        return "ERROR: Could not execute $sql. " . mysqli_error($conn);
+    }
+}
+
+// Logout function
+function logout() {
+    session_unset();
+    session_destroy();
+    header("Location: index.php");
+    exit();
+}
+
+// Check if user is logged in and redirect to login page if not
+function check_login() {
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: login.php");
+        exit();
+    }
+}
+
+// Check if user is an admin and redirect to index page if not
+function check_admin() {
+    if ($_SESSION['type'] != 'admin') {
+        header("Location: index.php");
+        exit();
+    }
+}
