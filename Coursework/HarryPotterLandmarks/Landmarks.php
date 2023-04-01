@@ -38,12 +38,12 @@
                     <img src=="https://i.imgur.com/UiVD8Fr.jpg" alt="Hogsmeade Village">
                     <h3>Hogsmeade Village</h3>
                     <p>Hogsmeade Village is a picturesque small village located near Hogwarts School of Witchcraft and Wizardry, where students and adults can go to visit various magical shops and pubs.</p>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <img src="https://i.imgur.com/mXkYmDy.jpg" alt="Platform 9¾ at King's Cross Station">
                     <h3>Platform 9¾ at King's Cross Station</h3>
                     <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
-                    </li>
+                </li>
                     </ul>
                     </section>
                 </main>
