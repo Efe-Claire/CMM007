@@ -17,7 +17,7 @@
         </nav>
     </header>
     <h1>Harry Potter Landmarks</h1>
-    <p><strong>Welcome, prepare for the journey ahead!</strong> Share your Harry Potter experiences with us:</p>
+    <p>Share your Harry Potter experiences with us:</strong></p>
 
     <main>
         <section>

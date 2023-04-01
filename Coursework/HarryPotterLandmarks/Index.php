@@ -25,7 +25,7 @@
 	</div>
 	
 	<h1>Harry Potter Landmarks</h1>
-	<p><strong>Welcome fellow Potterheads, prepare for the journey ahead!</strong> Share your Harry Potter experiences with us:</p>
+	<p><strong>Welcome fellow Potterheads, prepare for the journey ahead!</strong></p>
 	<header>
 		<nav>
 			<ul>
