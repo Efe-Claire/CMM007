@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="new.css">
 </head>
 <body>
     <header>
@@ -46,42 +46,6 @@
                     </li>
                     </ul>
                     </section>
-                    <section>
-                        <h2>Stories</h2>
-                        <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name"><br>
-                
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"><br>
-                
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
-                
-                            <input type="submit" value="Submit">
-                        </form>
-                    </section>
-                
-                    <section>
-                        <h2>About Us</h2>
-                        <p>We are passionate Harry Potter fans who want to share our love for the series with others. Our goal is to provide a platform for fans to share their experiences and connect with others who share their love for Harry Potter.</p>
-                    </section>
-                
-                    <section>
-                        <h2>Reviews</h2>
-                        <p>Read what others have to say about their experiences at these Harry Potter landmarks:</p>
-                        <ul>
-                            <li>
-                                <h3>John Doe</h3>
-                                <p>"I had the time of my life visiting Hogwarts School of Witchcraft and Wizardry. It was a dream come true for a die-hard Harry Potter fan like myself."</p>
-                            </li>
-                            <li>
-                                <h3>Jane Smith</h3>
-                                <p>"Diagon Alley was everything I imagined it would be and more. The attention to detail in the shops was incredible, and I loved being able to explore the wizarding world for myself."</p>
-                            </li>
-                        </ul>
-                    </section>
                 </main>
                 <footer>
                     <p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
@@ -89,4 +53,3 @@
             
             </body>
             </html>
-                

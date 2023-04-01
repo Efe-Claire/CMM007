@@ -11,3 +11,19 @@ window.addEventListener('scroll', function() {
     alert('You clicked on the Landmarks link!');
   });
   
+
+    
+  /* Style the button */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Style the button when hovered */
+  button:hover {
+    background-color: #0062cc;
