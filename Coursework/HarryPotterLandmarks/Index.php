@@ -57,6 +57,13 @@
 				<li>The Quidditch Pitch</li>
 			</ul>
 		</section>
+
+		<section>
+			<h3>About Us</h3>
+    		<p>Harry Potter Landmarks is a website dedicated to bringing together fans of the beloved Harry Potter series to share their experiences and stories. Our mission is to create a community of passionate Potterheads who can connect with each other and explore the magical world created by J.K. Rowling.</p>
+			<p>Our website features a collection of the top landmarks from the Harry Potter series, as well as a platform for users to share their own stories and reviews. Whether you're a die-hard fan or a newcomer to the wizarding world, we invite you to join us on this journey of discovery and wonder.</p>
+			<p>Thank you for visiting Harry Potter Landmarks!</p>
+		</section>
 	</main>
 
 	<footer>

@@ -9,6 +9,30 @@ body {
     font-size: 16px;
   }
   
+  /* Style the button */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #055757;
+}
+  
   /* Center the content on the page */
   .container {
     display: flex;
@@ -35,22 +59,6 @@ body {
   p {
     margin-top: 10px;
     line-height: 1.5;
-  }
-  
-  /* Style the button */
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  /* Style the button when hovered */
-  button:hover {
-    background-color: #0062cc;
   }
   
  
