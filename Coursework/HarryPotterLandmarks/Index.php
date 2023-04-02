@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Harry Potter Landmarks</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 	<style>
 		.login-icon {
 			position: absolute;
@@ -67,6 +68,12 @@
 	</main>
 
 	<footer>
+	<h2>Connect with Us</h2>
+            <ul>
+                <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li>
+                <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
+                <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li>
+            </ul>
 		<p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
 	</footer>
 

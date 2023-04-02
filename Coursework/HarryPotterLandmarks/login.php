@@ -21,6 +21,7 @@ if(empty($_POST["username"]) || empty($_POST["password"]))
  echo "Both fields are required.";
  }else
  {
+	?>
 	<p>Don't have an account? <a href="signup.php">Sign up</a></p>
 	</div>
 </body>

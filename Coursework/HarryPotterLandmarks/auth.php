@@ -87,3 +87,4 @@ function check_admin() {
         exit();
     }
 }
+?>

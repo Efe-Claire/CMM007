@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" type="text/css" href="assets/new.css">
+	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
     <header>
@@ -44,12 +45,47 @@
                     <h3>Platform 9¾ at King's Cross Station</h3>
                     <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
                 </li>
-                    </ul>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
-                </footer>
-            
-            </body>
-            </html>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="Gringotts Wizarding Bank">
+                    <h3>Gringotts Wizarding Bank</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Ministry of Magic">
+                    <h3>The Ministry of Magic</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Quidditch Pitch">
+                    <h3>The Quidditch Pitch</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Forbidden Forest">
+                    <h3>The Forbidden Forest</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Burrow">
+                    <h3>TThe Burrow</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Leaky Cauldron">
+                    <h3>The Leaky Cauldron</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+                <li>
+                    <img src="https://i.imgur.com/mXkYmDy.jpg" alt="The Chamber of Secret">
+                    <h3>The Chamber of Secret</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
+    </footer>
+</body>
+</html>

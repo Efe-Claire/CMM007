@@ -17,17 +17,24 @@ header {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    overflow: hidden;
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 20px;
+    float: left;
 }
 
 nav li a {
+    display: block;
     color: #fff;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
 }
 
 /* Style the main content section */
@@ -42,8 +49,19 @@ section {
     padding: 10px;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+}
+
 h2 {
     font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 10px;
 }
 
 ul {

@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" type="text/css" href="assets/new.css">
+	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
     <header>
@@ -22,21 +23,31 @@
     <main>
         <section>
             <h2>Stories</h2>
-                        <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name"><br>
-                
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"><br>
-                
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
-                
-                            <input type="submit" value="Submit">
-                        </form>
-                    </section>
-
+            <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
+            <form>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br><br>
+                                    
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br><br>
+                                    
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="50"></textarea>
+                <br><br>
+        
+                <label for="file-upload">Upload a file:</label>
+                <input type="file" id="file-upload" name="file-upload">
+                <br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
                     <section>
                         <h2>Reviews</h2>
                         <p>Here are some reviews from our users:</p>

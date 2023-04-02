@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" type="text/css" href="assets/new.css">
+	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
     <header>
@@ -25,16 +26,22 @@
                         <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
                         <form>
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name"><br>
-                
+                            <br>
+                            <input type="text" id="name" name="name">
+                            <br><br>
+                            
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"><br>
-                
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
-                
+                            <br>
+                            <input type="email" id="email" name="email">
+                            <br><br>
+                            
+                            <label for="message">Message:</label>
+                            <br>
+                            <textarea id="message" name="message" rows="5" cols="50"></textarea>
+                            <br><br>
+                            
                             <input type="submit" value="Submit">
-                        </form>
+                          </form>
                     </section>
 
                     <section>
