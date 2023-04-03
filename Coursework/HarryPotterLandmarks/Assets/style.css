@@ -8,7 +8,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #333;
+    background-color: #26422d;
     color: #fff;
     padding: 10px;
 }
@@ -55,7 +55,7 @@ h1 {
     font-size: 48px;
 }
 
-h2 {
+h3 {
     font-size: 24px;
 }
 
@@ -73,18 +73,27 @@ li {
     margin-bottom: 5px;
 }
 
-h3 {
-	background-color: #f2f2f2;
+h2 {
+	background-color: #5a9669;
 	padding: 20px;
 	margin: 20px 0;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(167, 18, 147, 0.2);
+	box-shadow: 0 0 10px rgba(11, 197, 230, 0.2);
 }
 
 /* Style the footer */
 footer {
-    background-color: #333;
+    background-color: #26422d;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
+
+/* Adjust social media icons size */
+ul
+#facebook, #twitter-logo, #youtube {
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+  }
+  

@@ -2,7 +2,33 @@
 <html>
 <head>
     <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="assets/new.css">
+    <script>
+ function searchLandmarks() {
+    // Get the input value
+    var input = document.getElementById("searchInput").value.toUpperCase();
+
+    // Get the list of landmarks
+    var landmarksList = document.getElementById("landmarksList");
+
+    // Get all list items in the landmarks list
+    var landmarks = landmarksList.getElementsByTagName("li");
+
+    // Loop through all landmarks, hide those that don't match the search query
+    for (var i = 0; i < landmarks.length; i++) {
+        var landmark = landmarks[i];
+        var name = landmark.getElementsByTagName("h3")[0];
+        var text = name.textContent || name.innerText;
+        if (text.toUpperCase().indexOf(input) > -1) {
+            landmark.style.display = "";
+        } else {
+            landmark.style.display = "none";
+        }
+    }
+}
+
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
@@ -13,18 +39,23 @@
 				<li><a href="landmarks.html">Landmarks</a></li>
 				<li><a href="Stories.html">Stories</a></li>
                 <li><a href="About Us.html">About Us</a></li>
-				<li><a href="Reviews.html">Reviews</a></li>
+				<li><a href="Reviews.php">Reviews</a></li>
             </ul>
         </nav>
     </header>
 
     <h1>Harry Potter Landmarks</h1>
-    <p><strong>Welcome, prepare for the journey ahead!</strong> Share your Harry Potter experiences with us:</p>
-
+    <p><strong>Welcome, prepare for the journey ahead!</strong> Share your Harry Potter experiences with us:
+    </p>
+    <form>
+        <input type="text" id="searchInput" placeholder="Search for a landmark...">
+        <button type="button" id="searchButton">Search</button>
+        
+    </form>
     <main>
         <section>
             <h2>Landmarks</h2>
-            <ul>
+            <ul id="landmarksList">
                 <li>
                     <img style="float:left" src="images/Hogwarts Castle 1.jpg" alt="Hogwarts Castle" id="Hogwarts Castle 1">
                     <h3>Hogwarts School of Witchcraft and Wizardry</h3>
@@ -39,6 +70,11 @@
                     <img src="images/Hogsmeade 1.jpg" alt="Hogsmeade Village" id="Hogsmeade 1">
                     <h3>Hogsmeade Village</h3>
                     <p>Hogsmeade Village is a picturesque small village located near Hogwarts School of Witchcraft and Wizardry, where students and adults can go to visit various magical shops and pubs.</p>
+                </li>
+                <li>
+                    <img src="images/King Cross Station Platform.jpeg" alt="Platform 9¾ at King's Cross Station" id="King Cross Station Platform">
+                    <h3>Platform 9¾ at King's Cross Station</h3>
+                    <p>Platform 9¾ at King's Cross Station is where students of Hogwarts School of Witchcraft and Wizardry catch the Hogwarts Express, a magical train that takes them to Hogwarts at the beginning of each school year.</p>
                 </li>
                 <li>
                     <img src="images/King Cross Station Platform.jpeg" alt="Platform 9¾ at King's Cross Station" id="King Cross Station Platform">
@@ -87,6 +123,10 @@
     <footer>
         <p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
     </footer>
+
+
+
+    
 </body>
 </html>
                 

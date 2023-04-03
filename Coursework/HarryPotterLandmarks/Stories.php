@@ -23,27 +23,31 @@
     <main>
         <section>
             <h2>Stories</h2>
-                        <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
-                        <form>
-                            <label for="name">Name:</label>
-                            <br>
-                            <input type="text" id="name" name="name">
-                            <br><br>
-                            
-                            <label for="email">Email:</label>
-                            <br>
-                            <input type="email" id="email" name="email">
-                            <br><br>
-                            
-                            <label for="message">Message:</label>
-                            <br>
-                            <textarea id="message" name="message" rows="5" cols="50"></textarea>
-                            <br><br>
-                            
-                            <input type="submit" value="Submit">
-                          </form>
-                    </section>
+            <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
+            <form action = "submitstory.php" method="POST" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" id="name" name="name">
+    <br><br>
+                                    
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email">
+    <br><br>
+                                    
+    <label for="story">Story:</label>
+    <br>
+    <textarea id="story" name="story" rows="5" cols="50"></textarea>
+    <br><br>
 
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="image">
+
+    <input type="submit" value="Submit">
+</form>
+
+        </section>
+        
                     <section>
                         <h2>Reviews</h2>
                         <p>Here are some reviews from our users:</p>
