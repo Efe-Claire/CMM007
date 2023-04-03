@@ -24,7 +24,7 @@
         <section>
             <h2>Stories</h2>
             <p>Share your stories and experiences about your visit to these Harry Potter landmarks:</p>
-            <form>
+            <form method="POST" enctype="multipart/form-data">
                 <label for="name">Name:</label>
                 <br>
                 <input type="text" id="name" name="name">
@@ -35,14 +35,13 @@
                 <input type="email" id="email" name="email">
                 <br><br>
                                     
-                <label for="message">Message:</label>
+                <label for="story">Story:</label>
                 <br>
-                <textarea id="message" name="message" rows="5" cols="50"></textarea>
+                <textarea id="story" name="story" rows="5" cols="50"></textarea>
                 <br><br>
         
                 <label for="file-upload">Upload a file:</label>
                 <input type="file" id="file-upload" name="file-upload">
-                <br><br>
         
                 <input type="submit" value="Submit">
             </form>

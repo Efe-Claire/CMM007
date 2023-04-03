@@ -3,12 +3,12 @@ session_start();
 
 // Database credentials
 define('DB_SERVER', 'localhost');
-define('DB_NAME', 'HarryPotterLandmarks');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'cm007');
 
 // Connect to database
-$db = new mysqli(DB_SERVER, DB_NAME, DB_USERNAME, DB_PASSWORD);
+$db = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 // Check connection
 if ($db  === false) {
@@ -39,14 +39,14 @@ function login($db , $username, $password) {
 // Signup function
 function signup($db, $name, $username, $email, $password) {
     // Check if username already exists
-    $sql = "SELECT * FROM HarryPotterLandmarks WHERE username='$username'";
+    $sql = "SELECT * FROM cm007 WHERE username='$username'";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
         return "Username already taken.";
     }
 
     // Check if email already exists
-    $sql = "SELECT * FROM HarryPotterLandmarks WHERE email='$email'";
+    $sql = "SELECT * FROM cm007 WHERE email='$email'";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
         return "Email already taken.";
@@ -57,10 +57,10 @@ function signup($db, $name, $username, $email, $password) {
 
     // Insert user into database
     $sql = "INSERT INTO HarryPotterLandmarks (username, email, password, type) VALUES ('$username', '$email', '$hashed_password', 'user')";
-    if (mysqli_query($conn, $sql)) {
+    if (mysqli_query($db, $sql)) {
         return "Signup successful.";
     } else {
-        return "ERROR: Could not execute $sql. " . mysqli_error($conn);
+        return "ERROR: Could not execute $sql. " . mysqli_error($db);
     }
 }
 

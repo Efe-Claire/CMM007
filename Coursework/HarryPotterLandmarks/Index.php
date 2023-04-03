@@ -20,44 +20,36 @@
 	</style>
 </head>
 <body>
-	<div class="login-icon">
-		<a href="login.php"><img src="login-icon.png" alt="LOGIN"></a>
-		<a href="signup.php"><img src="signup-icon.png" alt="SIGNUP"></a>
-	</div>
 	
-	<h1>Harry Potter Landmarks</h1>
-	<p><strong>Welcome fellow Potterheads, prepare for the journey ahead!</strong></p>
 	<header>
+	<div class="login-icon">
+				<a href="login.php"><img src="login-icon.png" alt="LOGIN"></a>
+				<a href="signup.php"><img src="signup-icon.png" alt="SIGNUP"></a>
+		</div>
 		<nav>
 			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="landmarks.php">Landmarks</a></li>
-				<li><a href="stories.php">Stories</a></li>
-				<li><a href="aboutus.php">About Us</a></li>
-				<li><a href="reviews.php">Reviews</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landmarks.html">Landmarks</a></li>
+				<li><a href="Stories.html">Stories</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Reviews.php">Reviews</a></li>
 			</ul>
 		</nav>
+		<div id="searchbox">
+			<form>
+            <p>Search</p>>
+            <input type="text" name="searchfield">
+            <input type="submit" value="Go">
+			</form>
+		</div>
 	</header>
-
+	<h1>Harry Potter Landmarks</h1>
+	<p><strong>Welcome fellow Potterheads, prepare for the journey ahead!</strong> Share your Harry Potter experiences with us:</p>
 	<main>
 		<section>
-			<h2>Landmarks</h2>
-			<p>Here are some of the top landmarks in the Harry Potter story:</p>
-			<ul>
-				<li>Hogwarts School of Witchcraft and Wizardry</li>
-				<li>Diagon Alley</li>
-				<li>The Burrow</li>
-				<li>The Forbidden Forest</li>
-				<li>Hogsmeade Village</li>
-				<li>The Leaky Cauldron</li>
-				<li>Platform 9 3/4 at King's Cross Station</li>
-				<li>Azkaban Prison</li>
-				<li>Gringotts Wizarding Bank</li>
-				<li>The Ministry of Magic</li>
-				<li>The Room of Requirement</li>
-				<li>The Quidditch Pitch</li>
-			</ul>
-		</section>
+			<img id="rgu_logo" src="Images/Hogwarts Castle 3.jpg" alt="Potter Land" id="Hogwarts Castle 3">
+			<h3>Hogwarts School of Witchcraft and Wizardry</h3>/>
+			
 
 		<section>
 			<h3>About Us</h3>
@@ -65,15 +57,16 @@
 			<p>Our website features a collection of the top landmarks from the Harry Potter series, as well as a platform for users to share their own stories and reviews. Whether you're a die-hard fan or a newcomer to the wizarding world, we invite you to join us on this journey of discovery and wonder.</p>
 			<p>Thank you for visiting Harry Potter Landmarks!</p>
 		</section>
+
 	</main>
 
 	<footer>
-	<h2>Connect with Us</h2>
-            <ul>
-                <li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li>
-                <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
-                <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li>
-            </ul>
+		<h2>Connect with Us</h2>
+		<ul>
+			<li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li>
+			<li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
+			<li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li>
+		</ul>
 		<p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
 	</footer>
 
