@@ -79,7 +79,7 @@ mysqli_close($conn);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Signup</title>
+	<title><strong>Signup Here</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
@@ -96,18 +96,25 @@ mysqli_close($conn);
 		</nav>
 	</header>
 	<h1>Signup</h1>
+    <p><strong>Welcome to the Harry Potter Landmarks Signup Page</p>
 	<main>
 		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-			<label for="username">Username:</label><br>
-			<input type="text" name="username" value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>"><br>
-			<label for="email">Email:</label><br>
-			<input type="email" name="email" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"><br>
-			<label for="password">Password:</label><br>
-			<input type="password" name="password"><br>
-			<label for="confirm_password">Confirm Password:</label><br>
-			<input type="password" name="confirm_password"><br>
+            <label for="name">Name:</label><br><br>
+			<input type="text" name="name" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>"><br><br>
+			<label for="username">Username:</label><br><br>
+			<input type="text" name="username" value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>"><br><br>
+			<label for="email">Email:</label><br><br>
+			<input type="email" name="email" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"><br><br>
+			<label for="password">Password:</label><br><br>
+			<input type="password" name="password"><br><br>
+			<label for="confirm_password">Confirm Password:</label><br><br>
+			<input type="password" name="confirm_password"><br><br>
 			<input type="submit" value="Signup">
 		</form>
+        
+        <div class="login-link">
+            <p>Already have an account? <a href="login.php">Log in</a></p>
+        </div>
 	</main>
 </body>
 </html>

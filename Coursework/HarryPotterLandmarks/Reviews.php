@@ -3,8 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Harry Potter Landmarks</title>
-    <link rel="stylesheet" type="text/css" href="new.css">
+<title>Harry Potter Landmarks</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
     <header>
@@ -13,24 +14,25 @@
                 <li><a href="index.html">Home</a></li>
 				<li><a href="landmarks.html">Landmarks</a></li>
 				<li><a href="Stories.html">Stories</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-				<li><a href="Reviews.html">Reviews</a></li>
+				<li><a href="Reviews.php">Reviews</a></li>
             </ul>
         </nav>
     </header>
-<  <section>
+<section>
     <h2>Reviews</h2>
     <p>Read what others have to say about their experiences at these Harry Potter landmarks:</p>
 
-    <section>
+</section>
+<section>
     <h2>Write a Review</h2>
     <form method="post" action="submit-review.php" style="font-size: 18px; font-weight: bold;">
         <label for="name">Name:</label>
+        <br>
         <input type="text" id="name" name="name" required style="font-size: 18px; font-weight: bold; padding: 5px;">
         <br><br>
         <label for="review">Review:</label>
         <br>
-        <textarea id="review" name="review" required style="font-size: 18px; font-weight: bold; padding: 5px;"></textarea>
+        <textarea id="review" name="review" required style="font-size: 18px; font-weight: bold; padding: 10px;"></textarea>
         <br><br>
         <button type="submit" style="font-size: 18px; font-weight: bold; padding: 5px;">Submit</button>
     </form>
@@ -66,8 +68,14 @@
 </section>
 </main>
 <footer>
-<p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
-</footer>
+		<h2>Connect with Us</h2>
+		<ul>
+			<li><a href="http://www.facebook.com"><img src="Images/facebook.jpeg" alt="Facebook" id="facebook" style="width: 30px; height: 30px;"></a></li>
+			<li><a href="http://www.twitter.com"><img src="Images/twitter-logo.png" alt="Twitter" id="twitter-logo" style="width: 30px; height: 30px;"></a></li>
+			<li><a href="http://www.youtube.com"><img src="Images/youtube.jpeg" alt="Youtube" id="youtube" style="width: 30px; height: 30px;"></a></li>
+		</ul>
+		<p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
+	</footer>
 
 </body>
 </html>

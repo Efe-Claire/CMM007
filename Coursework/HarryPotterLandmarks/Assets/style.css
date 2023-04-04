@@ -34,7 +34,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #111;
+    background-color: #111111;
 }
 
 /* Style the main content section */
@@ -55,6 +55,29 @@ h1 {
     font-size: 48px;
 }
 
+h2 {
+	background-color: #5a9669;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(11, 197, 230, 0.2);
+}
+
+li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-basis: calc(33.33% - 20px);
+}
+
+li img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
 h3 {
     font-size: 24px;
 }
@@ -64,22 +87,6 @@ p {
     margin: 20px 10px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 30px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-h2 {
-	background-color: #5a9669;
-	padding: 20px;
-	margin: 20px 0;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(11, 197, 230, 0.2);
-}
 
 /* Style the footer */
 footer {

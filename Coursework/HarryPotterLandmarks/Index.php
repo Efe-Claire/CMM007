@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+	<meta charset="UTF-8">
 	<title>Harry Potter Landmarks</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
@@ -23,15 +24,14 @@
 	
 	<header>
 	<div class="login-icon">
-				<a href="login.php"><img src="login-icon.png" alt="LOGIN"></a>
-				<a href="signup.php"><img src="signup-icon.png" alt="SIGNUP"></a>
-		</div>
+		<a href="login.php">LOGIN><a>
+		<a href="signup.php">SIGNUP</a>
+	</div>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="landmarks.html">Landmarks</a></li>
 				<li><a href="Stories.html">Stories</a></li>
-				<li><a href="About Us.html">About Us</a></li>
 				<li><a href="Reviews.php">Reviews</a></li>
 			</ul>
 		</nav>
@@ -48,9 +48,7 @@
 	<main>
 		<section>
 			<img id="rgu_logo" src="Images/Hogwarts Castle 3.jpg" alt="Potter Land" id="Hogwarts Castle 3">
-			<h3>Hogwarts School of Witchcraft and Wizardry</h3>/>
-			
-
+		
 		<section>
 			<h3>About Us</h3>
     		<p>Harry Potter Landmarks is a website dedicated to bringing together fans of the beloved Harry Potter series to share their experiences and stories. Our mission is to create a community of passionate Potterheads who can connect with each other and explore the magical world created by J.K. Rowling.</p>
@@ -63,12 +61,13 @@
 	<footer>
 		<h2>Connect with Us</h2>
 		<ul>
-			<li><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"></a></li>
-			<li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
-			<li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="Youtube"></a></li>
+			<li><a href="http://www.facebook.com"><img src="Images/facebook.jpeg" alt="Facebook" id="facebook" style="width: 30px; height: 30px;"></a></li>
+			<li><a href="http://www.twitter.com"><img src="Images/twitter-logo.png" alt="Twitter" id="twitter-logo" style="width: 30px; height: 30px;"></a></li>
+			<li><a href="http://www.youtube.com"><img src="Images/youtube.jpeg" alt="Youtube" id="youtube" style="width: 30px; height: 30px;"></a></li>
 		</ul>
 		<p>&copy; 2023 Harry Potter Landmarks. All rights reserved.</p>
 	</footer>
+	
 
 </body>
 </html>

@@ -28,13 +28,6 @@
 			<li><a href="Reviews.php">Reviews</a></li>
 		</ul>
 	</nav>
-	<div id="searchbox">
-		<form>
-        <p>Search</p>
-        <input type="text" name="searchfield">
-        <input type="submit" value="Go">
-		</form>
-	</div>
 </header>
 
 <main>
@@ -48,6 +41,9 @@
 			<input type="submit" value="Login">
 		</form>
 	</section>
+	<div class="signup-link">
+		<p>Don't have an account? <a href="signup.php">Sign up</a></p>
+	</div>
 </main>
 
 <footer>

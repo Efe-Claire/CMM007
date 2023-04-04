@@ -34,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // set a session variable to remember that the user is logged in
         $_SESSION['logged_in'] = true;
 
-        // redirect the user to the homepage
-        header('Location: index.php');
+        // redirect the user to the landmarks page
+        header('Location: Landmarks.php');
         exit;
 
     } else {
